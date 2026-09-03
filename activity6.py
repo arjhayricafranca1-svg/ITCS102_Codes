@@ -1,18 +1,22 @@
-# fist step to dynamic content 
+#int(), or eval(), float()
+x = int(input("What is your name ?."))
+
+sum = x + 4
+print("Total =", sum)
+print(type(x))
 
 
-name = input("What is your name .? ")
-print("Hi", name," How are you doing ? ")
-input("?.")
-print("Thats good")
+#int(), or eval(), float()
+x = eval(input("What is your name ?."))
 
-age = input("What is your age .?")
-print("Oh! youre", age," years old ")
+sum = x + 4
+print("Total =", sum)
+print(type(x))
 
-bdate = input("When is your bdate .?")
-print("Nice", bdate," same " )
 
-#print("Hi", name," How are you doing ? ")
-#print("Oh! youre", age," years old ")
-#print("Nice", bdate," same " )
+#int(), or eval(), float()
+x = float(input("What is your name ?."))
 
+sum = x + 4.1
+print("Total =", sum)
+print(type(x))
