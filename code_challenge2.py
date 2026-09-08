@@ -1,45 +1,53 @@
-money = eval(input("Enter amount to deposit: "))
+#PESO DENOMINATIOR
+# MONEY 4572
+# 1000, 500, 200, 100, 50, 20, 10, 5, 1 
 
-#denominations
-c1000 = 1000
-c500 = 500
-c200 = 200
-c100 = 100
-c50 = 50
-c20 = 20
-c10 = 10
-c5 = 5
-c1 = 1 
+#what operator / symbol did you use to solve the problem 
+# floor division, % modulus 
 
-#calculations 
-thousands = money//c1000
-money%= c1000
-five_hundreds = money//c500
-money%= c500
-two_hundreds = money//c200
-money%= c200
-hundreds = money//c100
-money%= c100
-fifties = money//c50
-money%= c50
-twenties = money//c20
-money%= c20
-tens = money//c10
-money%= c10
-fives = money//c5
-money%= c5
-ones = money//c1
-money%= c1
 
-#output
-print("\nHEre is a breakdown, using PH demonstration:")
-print("1000:", thousands)
-print("500:", five_hundreds)
-print("200:", two_hundreds)
-print("100:", hundreds)
-print("50:", fifties)
-print("20:", twenties)
-print("10:", tens)
-print("5:", fives)
-print("1:", ones)
+money = 4572
+libo = money // 1000 #4.6 --> 4
+libo_sukli = money % 1000 #572
+#libo_sukli = money - (libo * 1000)
+
+five_h = libo_sukli // 500 
+five_sukli = libo_sukli % 500 # 72
+
+
+two_h = five_sukli // 200
+two_sukli = five_sukli % 200
+
+hundred = two_sukli // 100
+sukli_h = two_sukli % 200
+
+fifty = sukli_h // 50
+fifty_sukli = sukli_h % 50
+
+bente = fifty_sukli // 20
+bente_sukli = fifty_sukli % 20
+
+sampo = bente_sukli // 10
+sampo_sukli = bente_sukli % 10
+
+payb = sampo_sukli // 5
+payb_sukli = sampo_sukli % 5
+
+
+piso = payb_sukli // 1
+siro = payb_sukli % 1
+
+
+
+print ("1000 - ", libo)
+print ("500 -", five_h)
+print ("200 -", two_h)
+print ("100 -", hundred)
+print ("50 -", fifty)
+print ("20 -", bente)
+print ("10 -", sampo)
+print ("5 -", payb)
+print ("1 -", piso)
+
+
 
